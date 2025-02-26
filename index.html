@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>João Candido</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: flex-start;
+            gap: 20px;
+        }
+        .project {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 45%;
+            box-sizing: border-box;
+        }
+        .project img {
+            height: 200px;
+            margin-bottom: 10px;
+        }
+        .project p {
+            text-align: left;
+            margin-top: 0;
+        }
+        .logo {
+            width: 40px;
+            height: auto;
+        }
+    </style>
+</head>
+<a href="#topo" class="voltar-topo">Voltar ao Topo</a>
+<div id="topo">
+    </div>
+<body>
+    <nav>
+        <ul>
+            <a href="#Sobre Mim"><b>Sobre Mim</b></a>
+            <a href="#Projetos">Projetos</a>
+            <a href="#Fale Comigo">Fale Comigo</a>
+        </ul>
+    </nav>
+    <header>
+        <div class="center">
+            <img src="img/joao2.jpg" alt="João Candido" height="400px" width="auto">
+        </div>
+        <div class="center">
+            <h1><strong>João Candido</strong></h1>
+            <h2>Desenvolvedor Front End</h2>
+        </div>
+    </header>
+    <main>
+        <section id="Sobre Mim" class="Sobre-mim">
+            <h2>Sobre Mim</h2>
+            <div class="Sobre-caixa">
+                <p>
+                    Olá, meu nome é João Candido. Sou formado pela Escola de Especialistas de Aeronáutica, com especialização em Armas e Munições (1988). Durante minha formação, descobri minha paixão por Tecnologia da Informação, aprendendo BASIC e COBOL.
+                </p>
+                <p>
+                    Na Força Aérea Brasileira, trabalhei com diversas tecnologias e me adaptei ao advento do Windows de forma autodidata. Essa busca contínua por conhecimento me proporcionou crescimento pessoal e profissional significativo.
+                </p>
+                <p>
+                    Atualmente, curso Desenvolvimento de Software no DevClub, aprofundando minhas habilidades para enfrentar novos desafios na área de tecnologia. Estou na Reserva Remunerada da Força Aérea Brasileira, mas continuo buscando oportunidades para aplicar e expandir meu conhecimento.
+                </p>
+                <p>
+                    Sou autodidata e, nos tempos livres, gosto de explorar novas tecnologias e acompanhar tendências do setor.
+                </p>
+            </div>
+        </section>
+        <section>
+            <br>
+            <h2 id="Projetos">Projetos</h2>
+            <div class="projects">
+                <div class="project">
+                    <figure>
+                        <a href="img/projeto1-50.jpg" target="_blank">
+                            <img src="img/projeto1-50.jpg" alt="Projeto 1">
+                        </a>
+                        <figcaption>Projeto 1(clique para ampliar)</figcaption>
+                    </figure>
+                    <p><b>GS Auto Paint</b></p>
+                    <p>Descrição do Projeto: O GS Auto Paint é um site desenvolvido para a empresa GS Funilaria e Pintura na Zona Sul de São Paulo. O site apresenta a empresa, seus serviços e facilita o contato e a solicitação de orçamentos.</p>
+                    <p>Tecnologias Utilizadas: HTML, CSS e imagens.</p>
+                    <p>Funcionalidades:</p>
+                    <ol>
+                        <li>Página Inicial: Banner da empresa e mensagem de boas-vindas.</li>
+                        <li>Navegação: Menu com links para "Quem Somos", "Serviços", "Orçamento" e "Contato".</li>
+                        <li>Quem Somos: Descrição da empresa.</li>
+                        <li>Serviços: Lista dos serviços oferecidos.</li>
+                        <li>Orçamento: Formulário para solicitação de orçamento.</li>
+                        <li>Contato: Links para redes sociais, Google Maps e informações de endereço.</li>
+                    </ol>
+                </div>
+                <div class="project">
+                    <figure>
+                        <a href="img/projeto 2.jpg" target="_blank">
+                            <img src="img/projeto 2.jpg" alt="Projeto 2">
+                        </a>
+                        <figcaption>Projeto 2(clique para ampliar)</figcaption>
+                    </figure>
+                    <p><b>Naturopatia Amanda Mota</b></p>
+                    <p>Descrição: Criação de um site para Naturopatia Amanda Mota, focado em promover a saúde natural. O site apresenta a empresa, seus serviços e facilita o contato com os clientes através do WhatsApp.</p>
+                    <p>Tecnologias Utilizadas: HTML e CSS.</p>
+                    <p>Funcionalidades:</p>
+                    <ol>
+                        <li>Página inicial com mensagem de boas-vindas e imagem ilustrativa.</li>
+                        <li>Seção "Sobre" com informações sobre a empresa.</li>
+                        <li>Seção "Serviços" com descrições e imagens dos serviços oferecidos.</li>
+                        <li>Seção "Contato" com formulário de mensagem direta para WhatsApp.</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h3 id="Fale Comigo">Fale Comigo</h3>
+            <p>Tem alguma dúvida ou precisa de ajuda?</p>
+            <p>Entre em contato Comigo pelo formulário abaixo:</p>
+            <form action="mailto:candidojcc@gmail.com" method="post" enctype="text/plain">
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome"><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br>
+                <label for="mensagem">Mensagem:</label><br>
+                <textarea id="mensagem" name="mensagem" rows="4" cols="50"></textarea><br>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Clique nos ícones abaixo para acessar as minhas Redes Sociais:</p>
+        <div class="icon-container">
+            <a href="https://wa.me/5521985471751" target="_blank">
+                <img src="img/logo_whats1.png" alt="WhatsApp" class="social-icon"height="200px" width="auto>
+            </a>
+            <a href="https://www.instagram.com/joaocandidorj10/" target="_blank">
+                <img src="img/logo_insta1.png" alt="Instagram" class="social-icon" height="50px" width="auto>
+            </a>
+            <a href="https://x.com/JohnnyCandidoCG?t=MKxHIcU2H-GR9gdenVWT_g&s=09" target="_blank">
+                <img src="img/xis-remove.png" alt="Xis" class="social-icon">
+            </a>
+            <a href="https://www.linkedin.com/in/joaocandidorj10" target="_blank">
+                <img src="img/logo_linkedin2.png" alt="LinkedIn" class="social-icon">
+            </a>
+        </div>
+        <p>© 2025 João Candido Dev</p>
+    </footer>
+</body>
+</html>

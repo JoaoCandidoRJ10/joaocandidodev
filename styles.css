@@ -1,0 +1,50 @@
+body {
+  color: white;
+  background-image: url(img/cool-background.png);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  align-items: center;
+  padding: 16px;
+}
+
+a {
+  color: white;
+  text-decoration-color: white;
+}
+
+header img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 5px solid #d4dad4;
+}
+
+.center {
+  text-align: center;
+}
+.social-icon {
+  width: 70px; /* Defina a largura desejada */
+  height: auto; /* Mantém a proporção da imagem */
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.voltar-topo {
+  position: fixed; /* Fixa o botão na tela */
+  bottom: 10px; /* Posiciona o botão na parte inferior */
+  right: 20px; /* Posiciona o botão na parte direita */
+  background-color: #007bff; /* Cor de fundo */
+  color: white; /* Cor do texto */
+  padding: 10px 15px; /* Espaçamento interno */
+  border-radius: 5px; /* Bordas arredondadas */
+  text-decoration: none; /* Remove sublinhado do link */
+}
